@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Neue Croco sans Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+body{
+    background-color: #1A1E23;
+}
+ 
+.main-container{
+    display: flex;
+    position: relative;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.side-menu{
+    /* position: absolute;
+    left: 0%;
+    right: 95.83%;
+    top: 0%;
+    bottom: 1.45%; */
+    
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    background-color: #2a3139;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 750px;
+    text-align: center;
+    background-color: #2A3139;
+}
+
+.navigation-logo{
+    display: flex;
+    width: 60px;
+    margin: 10px auto 20px;
+    cursor: pointer;
+    background-color: #2A3139;
+}
+
+/* .left_logo{
+    position: absolute;
+    left: 0.52%;
+    right: 98.03%;
+    top: 1.07%;
+    bottom: 96.92%;
+
+    background: #1CAF4B;
+}
+
+
+.right_logo{
+    position: absolute;
+    left: 1.15%;
+    right: 96.35%;
+    top: 0.72%;
+    bottom: 96.92%;
+
+    background: #FFFFFF;
+} */
+
+ol, ul{
+    list-style: none;
+}
+
+.navigation-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.navigation_item{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation-link{
+    display: block;
+    text-decoration: none;
+}
+
+.navigation_img{
+    display: block;
+    width: 31px;
+    margin: 0 auto 12px;
+}
+
+.navigation_title{
+    color: #6a7787;
+}
+
+/* header*/
+
+.header{
+    margin-right: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 60px;
+    padding: 0 30px;
+    background-color: #252b33;
+    gap: 30px;
+    align-items: center!important;
+    justify-content: flex-end!important;
+}
+
+.body-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 8px);
+    padding-left: var(--bs-gutter-x, 8px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 0;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.filter{
+    flex: 0 0 auto;
+    background-color: #1D242C;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.slot-filters{
+    margin: 0;
+    padding: 0;
+    border-radius: 6px 6px 0 0;
+    background-color: #1d242c;
+}
+
+.col-9{
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.category-filters{
+    padding: 0;
+    border-radius: 6px;
+    background-color: #1d242c;
+}
+
+.category-filters-body{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #1f2329;
+}
+
+.filter_body{
+    height: auto;
+    transition: .2s;
+    background-color: #272D36;
+    min-width: 25px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.filters-item{
+   
+    position: relative;
+}
+
+button{
+    border: 0;
+    color: #FFFFFF;
+    background: none;
+}
+
+button, input{
+    overflow: visible;
+}
+
+.up_link{
+    color: #FFFFFF;
+
+}
+
+.link {
+    position: relative;
+    min-height: 52px;
+    margin: 0 10px;
+    padding: 15px 10px 16px;
+    opacity: .6;
+    background-color: transparent;
+    color: #D9E3EF;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .84px;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+}
+
+.link_icon{
+    width: 18px;
+    margin-right: 5px;
+    transform: translateY(3px);
+}
+
+.link.active{
+    color: #15af44;
+}
+
+.link_total-count{
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    width: 20px;
+    opacity: .7;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .66px;
+    text-align: left;
+}
+
+.grid{
+    margin: 10px;
+}
+
+
+.container{
+    padding-inline: 15px;
+}
+
+.card-weather{
+    padding: 15px;
+    background-color: rgb(29, 45, 58);
+    border-radius: 15px;
+    color: white;
+}
+
+.card-weather > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Results-item{
+    display: inline-block;
+    position: relative;
+}
+
+.link_total-count{
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    width: 20px;
+    opacity: .7;
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .66px;
+    text-align: left;
+}
+
+.layout-container{
+    width: 100%;
+    padding-left: 80px;
+    background-color: #1A1E23;
+}
+
+.filter_body-content{
+    display: flex;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: 6px;
+    height: 53px;
+    white-space: nowrap;
+}
+
+.custom-col{
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill,minmax(169px,1fr));
+}
+
+.item_provider{
+    height: 140px;
+    width: 100%;
+}
+
+.item{
+    border-radius: 4px;
+    box-shadow: 0 0 10px #0009;
+}
+
+.under_item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    min-height: 149px;
+    overflow: hidden;
+    background: #252b33;
+    cursor: pointer;
+}
+
+.games-list{
+    background-color: #252B33;
+    /* width: 216.38px; */
+    height: 178px;
+}
+
+.item_title{
+    color: #ffffff;
+}
+
+.image{
+    width: 100%;
+}
+
+.background-slider{
+    margin: 10px;
+}
+
+.button_div{
+    padding: 17px 20px 13px;
+    float: right;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.arrow{
+    height: 7.98px;
+    width: 12.13px;
+    margin-left: 12px;
+    transition: .2s;
+}
+
+.item__cover[_ngcontent-serverApp-c160]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    opacity: 0;
+    background: #000;
+}
